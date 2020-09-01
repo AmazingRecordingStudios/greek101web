@@ -109,6 +109,15 @@ h3 {
     font-size: 1.2em
 }
 
+
+li {
+	margin:  2px 2px 2px 25px;
+
+}
+
+.note {color:#54585E;font-size:75%;text-align:left;text-shadow:0 1px 1px #ccc;}
+
+
 #header {
 	position:  relative;
     min-height: 50px;
@@ -134,7 +143,16 @@ font:  bold 14px/18px Arial, Helvetica, sans-serif;
 }
 
 
-
+#header h2 {
+	color: #336699; 
+   font:  bold 14px/18px Arial, Helvetica, sans-serif;
+	   background: rgba(255,255,255,.5);
+	text-align:right;
+   padding: 10px; 
+	position:absolute;
+	right:10px;
+	top:60px;
+}
 
 
 #header h3 {
