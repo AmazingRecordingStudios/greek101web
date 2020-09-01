@@ -187,7 +187,6 @@ font:  bold 14px/18px Arial, Helvetica, sans-serif;
 	margin-right:auto;
 }
 
-
 #nav {
    position:fixed;
 	left:  0px;
@@ -196,14 +195,12 @@ font:  bold 14px/18px Arial, Helvetica, sans-serif;
    width:  100%;
    text-align:center;
 	padding:  2px;
+	padding-bottom: 8px;
    background: #EDEEF5;
    border-top-style:solid;
    border-top-width:1px;
    border-top-color: #4D599D;
 }
-
-
-
 
 a.navButton {
 	color:  #4D599D;
