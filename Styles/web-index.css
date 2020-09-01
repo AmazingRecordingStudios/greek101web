@@ -243,6 +243,25 @@ a.navButton {
 }
 
 
+.logobottom {
+	font-family: "cooperblack", Arial, Helvetica, sans-serif;
+  padding-top: 8px;
+}
+
+.linksbottom {
+	 padding-bottom: 16px;
+	 font-weight: bold;
+}
+
+.logobottom, .linksbottom {
+	  text-align:center;
+    color: white;
+    background: rgb(137, 143, 188);/* #EDEEF5; */
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 90%;
+}
+
 table
 {
 border-collapse:collapse;
