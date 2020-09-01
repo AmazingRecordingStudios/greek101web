@@ -20,14 +20,6 @@ body {
     margin: 0pt; 
 }
 
-.navheader {
-    text-align:center;
-    background: #EDEEF5;
-    padding-bottom: 8px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
 nav#landmarks {
     display:none;
 }
