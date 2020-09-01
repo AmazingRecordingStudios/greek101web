@@ -40,8 +40,9 @@ body {
 
 
 #content {
-
-
+  padding-left: 25px; 
+  padding-right: 25px;
+  padding-bottom: 25px;
 }
 
 
@@ -115,7 +116,7 @@ li {
 
 }
 
-.note {color:#54585E;font-size:75%;text-align:left;text-shadow:0 1px 1px #ccc;}
+.note, .footer {color:#54585E;font-size:75%;text-align:left;text-shadow:0 1px 1px #ccc;}
 
 
 #header {

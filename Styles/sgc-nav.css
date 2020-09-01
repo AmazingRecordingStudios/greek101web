@@ -139,6 +139,7 @@ p.greekWordList {
 }
 
 h2.greekShortText {
+	font-family: "literata", Georgia, serif;
   text-align: center;
   padding: 10px;
   font-size: 32px;
@@ -167,7 +168,7 @@ p.citationRef {
   margin-bottom: 0px;
 }
 
-p.phonetics {
+#content p.phonetics {
   align-self: center;
   padding: 2px;
   margin-right: 10px;
@@ -175,7 +176,7 @@ p.phonetics {
   font-size: 20px;
 }
 
-p.translation {
+#content p.translation {
   text-align: center;
   padding: 10px;
   padding-bottom: 2em;
@@ -186,7 +187,7 @@ p.translation {
   font-size: 20px;
 }
 
-p.linguisticNote {
+#content p.linguisticNote {
   align-self: center;
   padding-top: 0em; 
   margin-right: 10px;
@@ -227,6 +228,10 @@ span.case {
 
 .jsplaying {
 	background-color: #FFFF00;
+}
+
+.footer {
+  font: 100%/1.4 Georgia, serif;
 }
 
 th, td {
