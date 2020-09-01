@@ -67,6 +67,30 @@ body {
  }
 
 
+a {
+    -moz-transition: color .15s linear, background-color .15s linear;
+    -webkit-transition: color .15s linear, background-color .15s linear;
+    transition: color .15s linear, background-color .15s linear
+}
+
+a:link {
+    color:  #4D599D;
+	text-decoration:  none;
+
+}
+
+a:visited {
+    color:  #4D599D;
+	text-decoration:  none;
+
+}
+
+a:hover, a:focus, a:active {
+    background-color: #e3e0d1
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0 8px .5em;
     color: #444;
@@ -75,6 +99,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 1.8em
+}
+
+h2 {
+    font-size: 1.5em
+}
+
+h3 {
+    font-size: 1.2em
 }
 
 #header {
@@ -102,9 +134,7 @@ font:  bold 14px/18px Arial, Helvetica, sans-serif;
 }
 
 
-h3 {
-    font-size: 1.2em
-}
+
 
 
 #header h3 {
