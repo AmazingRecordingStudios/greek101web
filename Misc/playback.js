@@ -178,7 +178,7 @@ function includeHTML() {
   for (i = 0; i < elements_to_substitute.length; i++) {
     let elmnt = elements_to_substitute[i];
     /*search for elements with a certain atrribute:*/
-    var htmlFile = elmnt.getAttribute("w3-include-html");
+    let htmlFile = elmnt.getAttribute("w3-include-html");
     if (htmlFile) {
       /*make an HTTP request using the attribute value as the file name:*/
       let xhttp = new XMLHttpRequest();
