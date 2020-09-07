@@ -160,7 +160,10 @@ function includeLoadedHtml(request, elmnt) {
           elmnt.innerHTML = request.responseText;
       } else 
       {
-        if (request.status == 404) {elmnt.innerHTML = "Page not found: " + file;}
+        if (request.status == 404) {
+          var htmlFile = elmnt.getAttribute("w3-include-html");
+          elmnt.innerHTML = "Page not found: " + htmlFile;
+        }
         /*remove the attribute, and call this function once more:*/
         elmnt.removeAttribute("w3-include-html");
         includeHTML();
