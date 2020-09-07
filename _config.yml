@@ -2,5 +2,6 @@
 title: "Greek 101"
 description: "read along audiobook for Ancient Greek"
 #permalink: "/stories/:title"
-url: https://amazingrecordingstudios.github.io/greek101web/
+url: https://amazingrecordingstudios.github.io/
+baseurl: /greek101web
 
