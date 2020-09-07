@@ -154,34 +154,35 @@ function isEmptyString(string) {
 	return string === "";
 }
 
+function includeLoadedHtml(request, elmnt) {
+  if (request.readyState == XMLHttpRequest.DONE) {
+      if (request.status == 200 || this.status == 0) {
+          elmnt.innerHTML = request.responseText;
+      } else 
+      {
+        if (request.status == 404) {elmnt.innerHTML = "Page not found: " + file;}
+        /*remove the attribute, and call this function once more:*/
+        elmnt.removeAttribute("w3-include-html");
+        includeHTML();
+       }
+    }
+};
+
 function includeHTML() {
-  var z, i, elmnt, file, xhttp;
+  var elements_to_substitute, i;
   /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
+  elements_to_substitute = document.querySelectorAll('[w3-include-html]'); 
+  for (i = 0; i < elements_to_substitute.length; i++) {
+    let elmnt = elements_to_substitute[i];
     /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
+    var htmlFile = elmnt.getAttribute("w3-include-html");
+    if (htmlFile) {
       /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200 || this.status == 0) {
-              elmnt.innerHTML = this.responseText;
-          } else 
-          {
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-           }
-        }
-      }      
-      xhttp.open("GET", file, true);
+      let xhttp = new XMLHttpRequest();
+      //was onreadystatechange / onload 
+      xhttp.onload = function() { includeLoadedHtml(this, elmnt); };
+      xhttp.open("GET", htmlFile, true);
       xhttp.send();
-      /*exit the function:*/
-      return;
     }
   }
 };
