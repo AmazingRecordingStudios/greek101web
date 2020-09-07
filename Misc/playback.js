@@ -161,7 +161,7 @@ function includeLoadedHtml(request, elmnt) {
       } else 
       {
         if (request.status == 404) {
-          var htmlFile = elmnt.getAttribute("w3-include-html");
+          let htmlFile = getLocalResourceRelativeToRoot(elmnt);
           elmnt.innerHTML = "Page not found: " + htmlFile;
         }
         /*remove the attribute, and call this function once more:*/
@@ -178,7 +178,7 @@ function includeHTML() {
   for (i = 0; i < elements_to_substitute.length; i++) {
     let elmnt = elements_to_substitute[i];
     /*search for elements with a certain atrribute:*/
-    let htmlFile = elmnt.getAttribute("w3-include-html");
+    let htmlFile = getLocalResourceRelativeToRoot(elmnt);
     if (htmlFile) {
       /*make an HTTP request using the attribute value as the file name:*/
       let xhttp = new XMLHttpRequest();
@@ -188,4 +188,16 @@ function includeHTML() {
       xhttp.send();
     }
   }
+};
+
+function getLocalResourceRelativeToRoot(elmnt) {
+
+  const SITE_BASE_URL = '/greek101web';
+
+  let urlPart2 = elmnt.getAttribute("w3-include-html");
+  
+  let rootRelativeUrl = SITE_BASE_URL + urlPart2;
+  
+  return rootRelativeUrl;
+
 };
