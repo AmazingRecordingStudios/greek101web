@@ -156,7 +156,7 @@ function isEmptyString(string) {
 
 function includeLoadedHtml(request, elmnt) {
   if (request.readyState == XMLHttpRequest.DONE) {
-      if (request.status == 200 || this.status == 0) {
+      if (request.status == 200 || request.status == 0) {
           elmnt.innerHTML = request.responseText;
       } else 
       {
