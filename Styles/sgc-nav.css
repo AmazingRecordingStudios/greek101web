@@ -150,10 +150,14 @@ h2.greekShortText {
 }
 
 h2.greekLongText {
+	font-family: "literata", Georgia, serif;
   text-align: center;
   padding: 10px;
   font-size: 24px;
   font-weight: normal;
+  margin-bottom: 0px;
+  text-indent: 0px;
+  margin-top: 20px;
   margin-bottom: 0px;
 }
 
