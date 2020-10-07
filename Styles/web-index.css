@@ -1,5 +1,5 @@
 @font-face {
-font-family: "cooperblack"; 
+font-family: "cooperblack";
 font-weight: normal;/*400*/
 font-style: normal;
 src: url(../Fonts/Cooper-Black-Regular.ttf);
@@ -13,7 +13,7 @@ h5, h6, html, li, ul, ol, p, pre, textarea, table, td, th {
 
 
 body, html {
-    background: #EDEEF5; 
+    background: #EDEEF5;
 
 }
 
@@ -38,7 +38,7 @@ body {
     background: #ffffff
 }
 
-.navheader {
+.navheader, .w3-dropdown-content {
     text-align:center;
     background: #EDEEF5;
     padding-bottom: 8px;
@@ -47,7 +47,7 @@ body {
 }
 
 #content {
-  padding-left: 25px; 
+  padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 25px;
 }
@@ -65,7 +65,7 @@ body {
 
 .title2 {
   color:#43464B;font-size:16px;font-weight:bold;
-   margin:20px 0; 
+   margin:20px 0;
    padding-top:10px;
    border-color:#4D599D;border-bottom-style:solid;border-width:2px;text-transform:capitalize;
 }
@@ -145,11 +145,11 @@ li {
 }
 
 #header h1 {
-	color: #43464B; 
+	color: #43464B;
    font: bold 48px/90px cooperblack, Arial, Helvetica, sans-serif;
    background: rgba(255,255,255,.0);
-   letter-spacing: -1px;  
-   padding: 10px; 
+   letter-spacing: -1px;
+   padding: 10px;
 	position:absolute;
 	left:15px;
 	top:15px;
@@ -163,11 +163,11 @@ font:  bold 14px/18px Arial, Helvetica, sans-serif;
 
 
 #header h2 {
-	color: #336699; 
+	color: #336699;
    font:  bold 14px/18px Arial, Helvetica, sans-serif;
 	   background: rgba(255,255,255,.5);
 	text-align:right;
-   padding: 10px; 
+   padding: 10px;
 	position:absolute;
 	right:10px;
 	top:60px;
@@ -175,7 +175,7 @@ font:  bold 14px/18px Arial, Helvetica, sans-serif;
 
 
 #header h3 {
-	color: #43464B; 
+	color: #43464B;
    font:  bold 14px/14px Arial, Helvetica, sans-serif;
 	text-align:left;
 	text-shadow: white 1px 0 10px;
@@ -221,7 +221,7 @@ a.navButton {
 	padding:  0px 25px 0px 25px;
 	margin-top: 12px;
 	height:  32px;
-	
+
 	}
 
 #display_vocab{
@@ -234,8 +234,8 @@ a.navButton {
     padding: 6px 10px 100px 6px;
 	border-top: 1px solid #4D599D;
     font-size: 75%;
-    
-	
+
+
 }
 
 #footer ul {
@@ -286,7 +286,7 @@ padding: 10px 10px 2px 10px;
 }
 
 
-thead th 
+thead th
 {color:#54585E;font-size:90%;font-weight:normal;margin:20px 0 10px;padding-bottom:10px;text-align:left;font-weight:bold;}
 
 
@@ -304,10 +304,10 @@ thead th
 	font-size:125%;
 	margin-top: 12px;
 	height:  32px;
-	
 
 
-}							
+
+}
 
 
 .answerButton {
@@ -315,7 +315,7 @@ thead th
 	font-size:  125%;
 	width: 600px;
 	cursor: pointer;
-		
+
 
 }
 
@@ -465,8 +465,8 @@ thead th
 }
 
 
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px)  {
 
 	body {
@@ -479,11 +479,11 @@ and (max-device-width : 480px)  {
 	}
 
 #header h1 {
-	color: #43464B; 
+	color: #43464B;
    font: bold 24px/44px cooperblack, Arial, Helvetica, sans-serif;
    background: rgba(255,255,255,.0);
-   letter-spacing: -1px;  
-   padding: 10px; 
+   letter-spacing: -1px;
+   padding: 10px;
 	position:absolute;
 	left:15px;
 	top:15px;
@@ -496,11 +496,11 @@ font:  bold 7px/9px Arial, Helvetica, sans-serif;
 }
 
 #header h2 {
-	color: #336699; 
+	color: #336699;
    font:  bold 7px/9px Arial, Helvetica, sans-serif;
 	   background: rgba(255,255,255,.0);
 	text-align:right;
-   padding: 10px; 
+   padding: 10px;
 	position:absolute;
 	right:10px;
 	top:60px;
@@ -508,7 +508,7 @@ font:  bold 7px/9px Arial, Helvetica, sans-serif;
 
 
 #header h3 {
-	color: #43464B; 
+	color: #43464B;
    font:  bold 6px/6px Arial, Helvetica, sans-serif;
 	text-align:left;
   text-shadow: white 1px 0 10px;
