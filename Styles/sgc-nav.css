@@ -17,7 +17,7 @@ body {
     height:100%; /* force the BODY element to match the height of the HTML element */
     /*text-align: center; */
     padding:0pt;
-    margin: 0pt; 
+    /*margin: 0pt; */
 }
 
 nav#landmarks {
