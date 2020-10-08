@@ -16,7 +16,7 @@ body {
 	//text-align: justify;*/
     height:100%; /* force the BODY element to match the height of the HTML element */
     /*text-align: center; */
-    padding:0pt; 
+    padding:0pt;
     margin: 0pt; 
 }
 
@@ -37,7 +37,7 @@ ol, ul {
     list-style-type: none;
 	text-align: center;
 	list-style-position: inside;
-	margin-left: 0; 
+	margin-left: 0;
 	padding-left: 0;
 }
 
@@ -49,11 +49,11 @@ li {
     list-style-type: disc;
 	text-align: left;
 	list-style-position: inside;
-	margin-left: 0; 
+	margin-left: 0;
 }
 
 .headingLargePaddingBottom {
-	padding-bottom: 32pt; 
+	padding-bottom: 32pt;
 	padding-top: 8pt;
 	text-align: center;
 
@@ -193,7 +193,7 @@ p.citationRef {
 
 #content p.linguisticNote {
   align-self: center;
-  padding-top: 0em; 
+  padding-top: 0em;
   margin-right: 10px;
   margin-left: 10px;
   text-align: justify;
