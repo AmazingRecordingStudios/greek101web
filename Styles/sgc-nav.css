@@ -96,6 +96,16 @@ page-break-after:always;
 	padding-left: 4px;
 }
 
+.inlineiconleft {
+  height: 0.5em;
+	padding-right: 4px;
+}
+
+.inlineiconnp {
+  height: 0.5em;
+	padding-left: 0px;
+}
+
 #mainQuote {
 /*	justify-self: start;
 	align-self: center;*/
